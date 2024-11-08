@@ -6,8 +6,11 @@
 sudo apt-get update -y
 sudo apt-get install nginx -y
 
-# Add "Holberton School" to the root HTML file
+# Ensure "Holberton School" is in the root HTML file
 echo "Holberton School" | sudo tee /var/www/html/index.html
+
+# Set correct permissions on the HTML file (if needed)
+sudo chmod 644 /var/www/html/index.html
 
 # Restart Nginx to apply changes
 sudo service nginx restart
