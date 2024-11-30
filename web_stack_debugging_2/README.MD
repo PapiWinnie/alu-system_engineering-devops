@@ -1,1 +1,1 @@
-Web sebugging 2
+Web Debugging 2
